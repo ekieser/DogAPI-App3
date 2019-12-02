@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="main.css">
+    <title>Dog API App</title>
+</head>
+<body>
+    <header>
+        <h1>Get a dog photo!</h1>
+    </header>
+    <main>
+        <form>
+            <feildset>
+                <legend><h2>Pick a dog breed</h2></legend>
+                <input id="breed-entry" type="text" placeholder="English Sheep Dog" required>
+                <button id="sumbit-entry" type="submit">Show me!</button>
+            </feildset>
+        </form>
+        <section>
+                <div id="dog-display"> 
+        
+                </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+    <script src="index.js"></script>
+</body>
+</html>

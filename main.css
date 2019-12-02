@@ -1,0 +1,21 @@
+* {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+
+#dog-display img {
+    margin-top: 5%;
+    width: 25%;
+    height: auto;
+    padding: 5;
+}
+
+#dog-display {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
