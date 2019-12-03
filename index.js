@@ -12,7 +12,7 @@ function logDogs(responseJson) {
     console.log(responseJson);
     if (responseJson.status !== "success") {
         alert('Could not find this breed. Try Again');
-    } else (responseJson.status === "success") {
+    } else if (responseJson.status === "success") {
         $('#dog-display').append(`<img src="${responseJson.message}" class="img-results">`);
     }
 } 
@@ -20,6 +20,7 @@ function logDogs(responseJson) {
 function submitForm() {
     $('form').submit(event => {
         event.preventDefault(); 
+        $('#dog-display').html('')
         let dogBreed = document.getElementById('breed-entry').value;
         retrieveImages(dogBreed);
     });
