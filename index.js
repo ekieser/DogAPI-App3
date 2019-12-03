@@ -12,7 +12,7 @@ function logDogs(responseJson) {
     console.log(responseJson);
     if (responseJson.status !== "success") {
         alert('Could not find this breed. Try Again');
-    } else if (responseJson === "success") {
+    } else (responseJson.status === "success") {
         $('#dog-display').append(`<img src="${responseJson.message}" class="img-results">`);
     }
 } 
